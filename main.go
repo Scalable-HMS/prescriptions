@@ -12,7 +12,7 @@ import (
 
 func main() {
 	err := sentry.Init(sentry.ClientOptions{
-		Dsn: "https://87cb609bebb8450283fb75d18f14aa28@o1176298.ingest.sentry.io/6273809",
+		Dsn: "https://98e7c538041340539b730bdeb03ae775@o1176298.ingest.sentry.io/6273810",
 	})
 	if err != nil {
 		log.Fatalf("sentry.Init: %s", err)
