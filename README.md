@@ -1,4 +1,4 @@
-# Prescription Microservice
+# Prescription Microservice golang
 
 How to use:
 
