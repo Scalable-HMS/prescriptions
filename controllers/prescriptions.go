@@ -39,7 +39,7 @@ func FindPrescriptions(c *gin.Context) {
 	var prescriptions []Prescriptions
 	models.DB.Find(&prescriptions)
 
-	c.JSON(http.StatusOK, gin.H{"data": prescriptions})
+	c.JSON(http.StatusOK, prescriptions)
 }
 
 // GET /prescriptions/:id
@@ -52,7 +52,7 @@ func FindPrescription(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"data": prescription})
+	c.JSON(http.StatusOK, prescription)
 }
 
 // POST /prescriptions
